@@ -67,7 +67,8 @@ body {
 	padding: 1%;
 	width: 98%;
 	line-height: 1.2em;
-	font-size: 1.4em;
+	font-size: 1.2em;
+	margin-left: 5%;
 	margin-bottom: 2%;
 }
 #container .question_area .question_r{
