@@ -173,7 +173,7 @@ body {
     margin: 0 auto;
 	margin-bottom: 0.3em;
 	width:100%;
-	color: #fff;
+	color: #000;
     text-align: center;
 	font-size: 75%;
 	font-weight:bold;
@@ -206,7 +206,7 @@ body {
 		padding: 2% 0;
 	}
 	#container h2 {
-		border-bottom: 4px dotted #fff;
+		border-bottom: 4px dotted #000;
 	}
 	#container .detail_area .r_side {
 		font-size: 1.6em;
