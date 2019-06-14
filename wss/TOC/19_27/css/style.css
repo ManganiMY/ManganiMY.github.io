@@ -57,6 +57,7 @@ body {
 	display: flex;
 	width: 80%;
 	margin: 4% auto 0;
+	margin-top 10px;
 }
 #container .question_area .column {
 	float: left;
