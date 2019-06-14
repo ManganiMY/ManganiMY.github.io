@@ -53,6 +53,30 @@ body {
 	margin: 5% auto 0;
 	width: 50%;
 }
+#container .question_are {
+	width: 80%;
+	margin: 4% auto 0;
+}
+#container .question_area .question_l{
+	float: left;
+	width: 20%;
+}
+#container .question_area .fixed{
+	border-radius: 20% 0px 0px 20%;
+	background: #ff4646;
+	padding: 1%;
+	width: 98%;
+	line-height: 1.2em;
+	font-size: 1.4em;
+	margin-bottom: 2%;
+}
+#container .question_area .question_r{
+	border-style: solid solid solid none;
+	border-width: 2px;
+	border-color: black;
+	float: right;
+	width: 80%;
+}
 #container .comment_area {
 	margin-top: 5%;
 }
@@ -199,9 +223,13 @@ body {
 	#container h1 {
 		margin: 0 auto;
 	}
+	#container .question_area {
+		margin: 0 auto;
+	}
 	#container .contents {
 		margin: 0 auto;
 	}
+
 	.footer {
 		padding: 2% 0;
 	}
