@@ -96,7 +96,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 	line-height: 1.6em;
-	font-size: 2.4em;
+	font-size: 2.2em;
 	border-bottom: 2px dotted black;
 	padding-bottom: 1%;
 	text-align: center;
@@ -146,7 +146,7 @@ body {
 	margin-left: 3%;
   text-align: justify;
 	line-height: 1.6em;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	word-break: normal;
 }
 #container .detail_area .author {
@@ -154,7 +154,7 @@ body {
 	padding: 1%;
 	width: 98%;
 	line-height: 1.2em;
-	font-size: 1.4em;
+	font-size: 1.3em;
 	margin-bottom: 2%;
 }
 #container .detail_area:after {
@@ -200,7 +200,7 @@ body {
 
 	width:100%;
 	color: #000;
-    text-align: center;
+    	text-align: center;
 	font-size: 100%;
 	line-height: 1.2;
 	font-weight: 700;
@@ -210,7 +210,7 @@ body {
 	margin-bottom: 0.3em;
 	width:100%;
 	color: #000;
-    text-align: center;
+    	text-align: center;
 	font-size: 75%;
 	font-weight:bold;
 	line-height: 1.2;
@@ -248,7 +248,7 @@ body {
 		border-bottom: 4px dotted #000;
 	}
 	#container .detail_area .r_side {
-		font-size: 1.6em;
+		font-size: 1.4em;
 	}
 
 
