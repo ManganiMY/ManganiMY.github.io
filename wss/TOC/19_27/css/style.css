@@ -71,6 +71,7 @@ body {
 	font-size: 1.4em;
     	width: 20%;
     	padding: 10px;
+	word-break: normal;
 }
 #container .question_area .weekly {
 	border-style: solid solid solid none;
@@ -80,6 +81,7 @@ body {
 	font-size: 1.4em;
     	width: 80%;
     	padding: 10px;
+	word-break: normal;
 }
 #container .question_area:after {
  	 content: "";
