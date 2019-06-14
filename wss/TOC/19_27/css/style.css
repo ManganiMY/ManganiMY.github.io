@@ -55,30 +55,26 @@ body {
 }
 #container .question_area {
 	width: 80%;
+	display: flex;
 	margin: 4% auto 0;
 }
-#container .question_area .question_l{
+#container .question_area .column {
 	float: left;
+}
+#container .question_area .fixed {
 	width: 20%;
-}
-#container .question_area .fixed{
-	border-radius: 15% 0px 0px 15%;
 	background: #ff4646;
-	padding: 1%;
-	width: 98%;
 	line-height: 1.2em;
-	font-size: 1.2em;
-	margin-left: 5%;
-	margin-bottom: 2%;
+	font-size: 1.4em;
+	
 }
-#container .question_area .question_r{
-	float: right;
+#container .question_area .weekly {
 	width: 80%;
 }
-#container .question_area .weekly{
-	border-style: solid solid solid none;
-	border-width: 2px;
-	border-color: black;
+#container .question_area:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 #container .comment_area {
 	margin-top: 5%;
