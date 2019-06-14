@@ -83,7 +83,7 @@ body {
 }
 #container .question_area:after {
  	 content: "";
-  	display: table;
+  	display: block;
   	clear: both;
 }
 #container .comment_area {
@@ -238,7 +238,6 @@ body {
 	#container .contents {
 		margin: 0 auto;
 	}
-
 	.footer {
 		padding: 2% 0;
 	}
