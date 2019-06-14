@@ -235,6 +235,7 @@ body {
 		margin: 0 auto;
 	}
 	#container .question_area {
+		margin-top: 10px;
 		margin: 0 auto;
 	}
 	#container .contents {
