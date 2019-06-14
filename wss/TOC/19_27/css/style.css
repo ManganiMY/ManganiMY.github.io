@@ -62,7 +62,7 @@ body {
 	width: 20%;
 }
 #container .question_area .fixed{
-	border-radius: 20% 0px 0px 20%;
+	border-radius: 15% 0px 0px 15%;
 	background: #ff4646;
 	padding: 1%;
 	width: 98%;
@@ -71,11 +71,13 @@ body {
 	margin-bottom: 2%;
 }
 #container .question_area .question_r{
+	float: right;
+	width: 80%;
+}
+#container .question_area .weekly{
 	border-style: solid solid solid none;
 	border-width: 2px;
 	border-color: black;
-	float: right;
-	width: 80%;
 }
 #container .comment_area {
 	margin-top: 5%;
