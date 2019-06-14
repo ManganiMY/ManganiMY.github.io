@@ -9,7 +9,7 @@ ul {
 	list-style:none;
 }
 body {
-	background: #333;
+	background: #ffffcc;
 	color: #000;
 	
 	font-size: 15px;
@@ -23,8 +23,8 @@ body {
 #container {
   width: 100%;
   font-size: 0.6em;
-  color: #fff;
-  background: #000;
+  color: #000;
+  background: #f5f5dc;
 }
 #container img {
   line-height: 0;
@@ -76,19 +76,19 @@ body {
 	display: inline-block;
 }
 #container h2 a {
-	color: #fff;
+	color: #000;
 }
 #container h2 a:link {
-	color: #fff;
+	color: #000;
 }
 #container h2 a:visited {
-	color: #fff;
+	color: #000;
 }
 #container h2 a:hover {
-	color: #ffe404;
+	color: red;
 }
 #container h2 a:active {
-	color: #fff;
+	color: #000;
 }
 
 #container .sample_page {
