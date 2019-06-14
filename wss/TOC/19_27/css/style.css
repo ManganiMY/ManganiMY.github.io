@@ -9,7 +9,7 @@ ul {
 	list-style:none;
 }
 body {
-	background: #ffffcc;
+	background: #7f7f7f;
 	color: #000;
 	
 	font-size: 15px;
@@ -40,7 +40,7 @@ body {
 #container .txt_read {
 	width: 100%;
 	padding-bottom: 3%;
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid black;
 }
 #container .txt_read span {
 	display: block;
@@ -61,7 +61,7 @@ body {
 	margin: 0 auto;
 	line-height: 1.6em;
 	font-size: 2.4em;
-	border-bottom: 2px dotted #000;
+	border-bottom: 2px dotted black;
 	padding-bottom: 1%;
 	text-align: center;
 }
@@ -173,7 +173,7 @@ body {
     margin: 0 auto;
 	margin-bottom: 0.3em;
 	width:100%;
-	color: #fff;
+	color: #000;
     text-align: center;
 	font-size: 75%;
 	font-weight:bold;
@@ -206,7 +206,7 @@ body {
 		padding: 2% 0;
 	}
 	#container h2 {
-		border-bottom: 4px dotted #fff;
+		border-bottom: 4px dotted #000;
 	}
 	#container .detail_area .r_side {
 		font-size: 1.6em;
