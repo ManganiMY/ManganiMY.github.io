@@ -22,15 +22,15 @@
   width: 50%;
   }
  .content {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: auto;
 } 
-img { 
-  width: 50%;
-  max-width: 1000px;
-}
  h1 {
+  font-size: 1.5em;
   border-bottom: 3px solid red;
+}
+ h2 {
+ font-size: 1em;
 }
 h2 a {
      text-decoration: none;
@@ -50,20 +50,84 @@ h2 a:hover {
 h2 a:active {
 	color: black;
 }
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body>
-  <div class="content">
-<img src="img/logo.png" style="width:75%" class="center">
-<h1>Weekly Shonen Sunday Table of Contents & Author Comments</h1>
-   
-<h2><a href="19_27/">Weekly Shonen Sunday #27 2019<img src="img/next2.png" style="padding:.02em; width:.35em; height:.7em" ></a></h2>
-<a href="19_27/">
-  <img src="19_27/img/img_ss.jpg" class="center">
-</a>
-<h2><a href="19_28/">Weekly Shonen Sunday #28 2019<img src="img/next2.png" style="padding:.02em; width:.35em; height:.7em" ></a></h2>
-<a href="19_28/">
-  <img src="19_28/img/img_ss.jpg" class="center">
-</a>
-  </div>	
+<div class="content">
+<img src="https://manganimy.github.io/wss/TOC/img/logo.png" style="width:75%" class="center">
+<h1>Weekly Shonen Sunday Table of Contents &amp; Author Comments</h1>
+
+  
+<div class="responsive">
+  <div class="gallery">
+    <a href="19_27/">
+      <img src="19_27/img/img_ss.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><h2><a href="19_27/">Weekly Shonen Sunday #27 2019</a></h2></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="19_28/">
+      <img src="19_28/img/img_ss.jpg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><h2><a href="19_28/">Weekly Shonen Sunday #28 2019</a></h2></div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px; text-align:justify;">
+  <p>.</p>
+</div>
+</div>
 </body>
