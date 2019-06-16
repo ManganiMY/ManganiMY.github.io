@@ -2,15 +2,87 @@
   <link rel="shortcut icon"
    type="image/x-icon"
         href="fav.ico">
- <title>Home</title> 
+ <title>Home</title>
+ <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
  <style>
-   img { 
+   
+   .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
-  max-width: 700px;
+  }
+ .content {
+  max-width: 1080px;
+  margin: auto;
+} 
+div.gallery {
+  border: 1px solid #ccc;
 }
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 49.99999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}   
   </style>
 </head>
+<body>
+<div class="content">  
 <h1>Home</h1>
 
-<p><a href="/TOC"><img src="TOC/img/logo.svg"><br>WSJ TOC hub</a></p>
-<p><a href="wss/TOC"><img src="wss/TOC/img/logo.png"><br>WSS TOC hub</a></P>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="/TOC">
+      <img src="TOC/img/logo.svg" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><h2><a href="/TOC">WSJ TOC hub</a></h2></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="wss/TOC">
+      <img src="wss/TOC/img/logo.png" alt="" width="600" height="400">
+    </a>
+    <div class="desc"><h2><a href="wss/TOC">WSS TOC hub</a></h2></div>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+    </div>
+</body>
+  
