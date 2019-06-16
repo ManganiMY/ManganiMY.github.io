@@ -24,7 +24,8 @@ body {
   width: 100%;
   font-size: 0.6em;
   color: #000;
-  background: #f5f5dc;
+  background-color: #ffdddd;
+  background-image: linear-gradient(#ffdddd, #f6626b);	
 }
 #container img {
   line-height: 0;
