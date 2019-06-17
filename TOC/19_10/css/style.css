@@ -49,9 +49,22 @@ body {
 	font-size: 1.4em;
 	line-height: 1.4em;
 }
+#container .grid-container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  margin: 10px 0 10px;
+}
+#container .grid-item {
+
+}
+#container .img_nav {
+    margin-top: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
 #container .img_wj {
-	margin: 5% auto 0;
-	width: 50%;
+	width: 100%;
 }
 #container .comment_area {
 	margin-top: 5%;
