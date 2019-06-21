@@ -31,75 +31,57 @@
   margin-right: auto;
   width: 50%;
   }
- .content {
-  max-width: 1080px;
-  margin: auto;
-} 
+   .list_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  }
+}@media(max-width:768px){ .list_center{width:100%}}
+
+.content{
+  overflow: auto;
+  }
  h1 {
   font-size: 1.5em;
   border-bottom: 3px solid #00479d;
 }
- h2 {
- font-size: 1em;
-}
-a {
-     text-decoration: none;
-}
-div.gallery a {
-	color: black;
-}
-div.gallery a:link {
-	color: black;
-}
-div.gallery a:visited {
-	color: black;
-}
-div.gallery a:hover {
-	color: #00479d;
-}
-div.gallery a:active {
-	color: black;
-}
-div.gallery {
-  border: 1px solid #777;
+
+
+.nominees{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+
+
+.list_item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:10px;border:2px solid #111}@media(min-width:769px){.list_item{width:20%}}@media(max-width:768px){.list_item{width:40%;padding:10px;}}
+
+.list_visual{
+width:100%;
+
+text-align:center;
 }
 
-div.gallery:hover {
-  border: 1px solid #00479d;
+@media(min-width:769px){
+.list_visual{
+max-height:170px;
+min-height:170px;
+}}
+
+@media(max-width:768px){
+.list_visual{
+min-height:127px;
+}}
+
+.list_visual img{
+width:auto;
+max-width:100%;
+max-height:170px;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
+@media(max-width:768px){
+.list_visual img{
 
-div.desc {
-  padding: 10px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 49.99999%;;
-  }
-}
+max-height:127px;
+}}
+.nominate-list__item__title{margin-bottom:10px;font-size:1.8rem;font-weight:700;line-height:1.5}@media(min-width:769px){.nominate-list__item__title{min-height:54px}}@media(max-width:768px){.nominate-list__item__title{font-size:1.6rem}}.nominate-list__item__author{margin-bottom:5px;font-size:1.4rem}@media(max-width:768px){.nominate-list__item__author{font-size:1.2rem}}@media(max-width:768px){.nominate-list__item__author span{display:block}}@media(min-width:769px){.nominate-list__item__author span:not(:last-of-type){margin-right:10px}}
 
 .clearfix:after {
   content: "";
@@ -110,25 +92,21 @@ div.desc {
 </head>
 <body>
 <div class="content">
-<img src="img/logo.png" style="width:55%" class="center">
+<img src="https://manganimy.github.io/sp/tsugimanga2019/img/logo.png" style="width:55%" class="center">
 <h1>Tsugi ni kuru (Next-Gen) Manga Awards 2019 Nominees</h1>
+<div class="list_center">
+<ul class="nominees">
+<li class="list_item"><div class="list_visual"><img src="https://manganimy.github.io/sp/tsugimanga2019/img/comics_01.jpg"></div><div class="nominate-list__item__title">Aka no Grimoire</div><div class="nominate-list__item__author"><span>Ａ－１０</span></div></li>
+<li class="list_item"><div class="list_visual"><img src="https://manganimy.github.io/sp/tsugimanga2019/img/comics_02.jpg"></div><div class="nominate-list__item__title">Ano Hito no i Ni Wa Boku Ga Tarinai</div><div class="nominate-list__item__author"><span>チョモラン</span></div></li>
+<li class="list_item"><div class="list_visual"><img src="https://manganimy.github.io/sp/tsugimanga2019/img/comics_03.jpg"></div><div class="nominate-list__item__title">Aka no Grimoire</div><div class="nominate-list__item__author"><span>Ａ－１０</span></div></li>
+<li class="list_item"><div class="list_visual"><img src="https://manganimy.github.io/sp/tsugimanga2019/img/comics_04.jpg"></div><div class="nominate-list__item__title">Ano Hito no i Ni Wa Boku Ga Tarinai</div><div class="nominate-list__item__author"><span>チョモラン</span></div></li>
+<li class="list_item"><div class="list_visual"><img src="https://manganimy.github.io/sp/tsugimanga2019/img/comics_05.jpg"></div><div class="nominate-list__item__title">Ano Hito no i Ni Wa Boku Ga Tarinai</div><div class="nominate-list__item__author"><span>チョモラン</span></div></li>
+<li class="list_item"><div class="list_visual"><img src="https://manganimy.github.io/sp/tsugimanga2019/img/comics_06.jpg"></div><div class="nominate-list__item__title">Aka no Grimoire</div><div class="nominate-list__item__author"><span>Ａ－１０</span></div></li>
+<li class="list_item"><div class="list_visual"><img src="https://manganimy.github.io/sp/tsugimanga2019/img/comics_07.jpg"></div><div class="nominate-list__item__title">Ano Hito no i Ni Wa Boku Ga Tarinai</div><div class="nominate-list__item__author"><span>チョモラン</span></div></li>
 
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="19_28/">
-      <img src="img/comics_01.jpg" alt="" width="600" height="400">
-	    <div class="desc"><h2>Aka no Grimoire</h2></div></a>
-  </div>
+</ul>
 </div>
-<div class="responsive">
-  <div class="gallery">
-    <a href="19_29/">
-      <img src="img/comics_02.jpg" alt="" width="600" height="400">
-	    <div class="desc"><h2>Ano Hito no i Ni Wa Boku Ga Tarinai</h2></div></a>
-  </div>
-</div>
-
 <div class="clearfix"></div>
 	
 <div class="center" style="text-align:center; line-height:1; font-size:.85em">
