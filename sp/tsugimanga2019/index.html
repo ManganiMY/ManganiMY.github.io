@@ -31,27 +31,18 @@
   margin-right: auto;
   width: 50%;
   }
-   .list_center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  }
-}@media(max-width:768px){ .list_center{width:100%}}
 
-.content{
-  overflow: auto;
-  }
+
  h1 {
   font-size: 1.5em;
   border-bottom: 3px solid #00479d;
 }
 
 
-.nominees{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+.nominees{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap; list-style-type: none; padding:0 10%; }
 
 
-.list_item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:10px;border:2px solid #111}@media(min-width:769px){.list_item{width:20%}}@media(max-width:768px){.list_item{width:40%;padding:10px;}}
+.list_item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:1%;border:1px solid #111}@media(min-width:769px){.list_item{width:20%}}@media(max-width:768px){.list_item{width:40%;padding:1%;}}
 
 .list_visual{
 width:100%;
@@ -78,7 +69,6 @@ max-height:170px;
 
 @media(max-width:768px){
 .list_visual img{
-
 max-height:127px;
 }}
 .nominate-list__item__title{margin-bottom:10px;font-size:1.8rem;font-weight:700;line-height:1.5}@media(min-width:769px){.nominate-list__item__title{min-height:54px}}@media(max-width:768px){.nominate-list__item__title{font-size:1.6rem}}.nominate-list__item__author{margin-bottom:5px;font-size:1.4rem}@media(max-width:768px){.nominate-list__item__author{font-size:1.2rem}}@media(max-width:768px){.nominate-list__item__author span{display:block}}@media(min-width:769px){.nominate-list__item__author span:not(:last-of-type){margin-right:10px}}
@@ -94,7 +84,8 @@ max-height:127px;
 <div class="content">
 <img src="https://manganimy.github.io/sp/tsugimanga2019/img/logo.png" style="width:55%" class="center">
 <h1>Tsugi ni kuru (Next-Gen) Manga Awards 2019 Nominees</h1>
-<div class="list_center">
+
+
 <ul class="nominees">
 <li class="list_item"><div class="list_visual"><img src="https://manganimy.github.io/sp/tsugimanga2019/img/comics_01.jpg"></div><div class="nominate-list__item__title">Aka no Grimoire</div><div class="nominate-list__item__author"><span>Ａ－１０</span></div></li>
 <li class="list_item"><div class="list_visual"><img src="https://manganimy.github.io/sp/tsugimanga2019/img/comics_02.jpg"></div><div class="nominate-list__item__title">Ano Hito no i Ni Wa Boku Ga Tarinai</div><div class="nominate-list__item__author"><span>チョモラン</span></div></li>
@@ -115,5 +106,5 @@ max-height:127px;
 	<p><b>Want to help? contact:<a href="https://twitter.com/WSM_manga">WSM_manga</a></b></p>
 
 </div>	
-</div>
+
 </body>
