@@ -120,7 +120,7 @@ body {
 	color: #000;
 }
 #container h2 a:hover {
-	color: red;
+	color: #9c46ff;
 }
 #container h2 a:active {
 	color: #000;
@@ -149,7 +149,7 @@ body {
 	word-break: normal;
 }
 #container .detail_area .author {
-	background: #ff4646;
+	background: #9c46ff;
 	padding: 1%;
 	width: 98%;
 	line-height: 1.2em;
