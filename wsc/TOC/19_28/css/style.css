@@ -9,7 +9,7 @@ ul {
 	list-style:none;
 }
 body {
-	background: #7f7f7f;
+	background: #999999;
 	color: #000;
 	
 	font-size: 15px;
@@ -24,7 +24,7 @@ body {
   width: 100%;
   font-size: 0.6em;
   color: #000;
-  background: #f5f5dc;
+  background: #f0ffff;
 }
 #container img {
   line-height: 0;
@@ -189,7 +189,7 @@ body {
 	width:100%;
 	margin: 10% auto 0;
 	padding: 3% 0 4%;
-	background: #f5f5dc;
+	background: #f0ffff;
 	border-top: 1px solid #000;
 }
 
