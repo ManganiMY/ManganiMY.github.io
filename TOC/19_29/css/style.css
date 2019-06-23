@@ -157,7 +157,21 @@ body {
 	background: #000;
 	border-top: 1px solid #fff;
 }
-
+#footer a {
+	color:  #ffe404;
+}
+#footer a:link {
+	color:  #ffe404;
+}
+#footer a:visited {
+	color:  #ffe404;
+}
+#footer a:hover {
+	color: #ffe404;
+}
+#footer a:active {
+	color:  #ffe404;
+}
 .cooyactxt {
   margin: 0 auto;
 	margin-bottom: 0.3em;
