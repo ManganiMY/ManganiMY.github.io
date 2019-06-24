@@ -192,7 +192,9 @@ body {
 	background: #f5f5dc;
 	border-top: 1px solid #000;
 }
-
+#footer a:hover {
+	color: red;
+}
 .cooyactxt {
   margin: 0 auto;
 	margin-bottom: 0.3em;
