@@ -1,6 +1,6 @@
 body {
  margin:0;
-  background: #f5f5dc;
+  background: #f0ffff;
   color: black;
   font-family: Futura,Trebuchet MS,sans-serif,Arial;
  }
@@ -50,7 +50,7 @@ body {
   margin: 0;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color:  #9c46ff;
   color: black;
 }
 .dropdown-content {
@@ -83,7 +83,7 @@ body {
   }
  h1 {
   font-size: 1.5em;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid  #9c46ff;
 }
  h2 {
  font-size: 1em;
@@ -101,7 +101,7 @@ div.gallery  a:visited {
 	color: black;
 }
 div.gallery  a:hover {
-	color: red;
+	color:  #9c46ff;
 }
 div.gallery  a:active {
 	color: black;
