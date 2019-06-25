@@ -20,7 +20,9 @@
 <meta property="og:url" content="https://manganimy.github.io/TOC/">
 <meta name="twitter:card" content="summary_large_image">	
 <style>
+ <style>
  body {
+ margin:0;
   background: black;
   color: white;
   font-family: Futura,Trebuchet MS,sans-serif,Arial;
@@ -31,10 +33,85 @@
   margin-right: auto;
   width: 50%;
   }
+	
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar .lang {
+  float: right;
+  margin-right: 15px;
+
+}
+.navbar .fit{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: yellow;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}	
  .content {
   max-width: 1000px;
-  margin: auto;
-} 
+  margin-top:60px;
+  margin-left: auto;
+  margin-right: auto;
+  }
 img { 
   width: 100%;
   max-width: 1000px;
@@ -67,6 +144,33 @@ h2 a:active {
 </style>
 </head>
 <body>
+<div class="navbar">
+<div class="fit">
+  <div class="dropdown">
+    <button class="dropbtn">Menu 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/">Home</a>
+      <a href="#">Weekly Shonen Jump Hub</a>
+      <a href=".../wss/TOC">Weekly Shonen Sunday Hub</a>
+      <a href=".../wsm/TOC">Weekly Shonen Magazine Hub</a>
+      <a href=".../wsc/TOC">Weekly Shonen Champion Hub</a>
+    </div>
+  </div> 
+  <div class="lang">
+  <div class="dropdown">
+    <button class="dropbtn">eng 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/esp">esp</a>
+    </div>
+    </div>
+  </div> 
+</div>
+</div>	<!-- end navbar -->
+<div style="margin: 0 8px">	
   <div class="content">
 <img src="img/logo.svg" style="width:70%" class="center">
 <h1>Weekly Shonen Jump Table of Contents & Author Comments</h1>
@@ -152,5 +256,6 @@ h2 a:active {
   <img src="img/19_30.jpg">
 </a> 	  
 	  
-  </div>	
+  </div><!-- end content -->	
+</div> <!-- end margin -->
 </body>
