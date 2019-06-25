@@ -1,6 +1,7 @@
 body {
  margin:0;
-  background: #f5f5dc;
+  background-color: #ffdddd;
+  background-image: linear-gradient(#ffdddd, #f6626b);	
   color: black;
   font-family: Futura,Trebuchet MS,sans-serif,Arial;
  }
@@ -50,8 +51,8 @@ body {
   margin: 0;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-  color: black;
+  background-color: #00479d;
+  color: white;
 }
 .dropdown-content {
   display: none;
@@ -83,7 +84,7 @@ body {
   }
  h1 {
   font-size: 1.5em;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #00479d;
 }
  h2 {
  font-size: 1em;
@@ -101,7 +102,7 @@ div.gallery  a:visited {
 	color: black;
 }
 div.gallery  a:hover {
-	color: red;
+	color: #00479d;
 }
 div.gallery  a:active {
 	color: black;
