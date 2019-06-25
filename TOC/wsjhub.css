@@ -76,6 +76,7 @@ body {
   display: block;
 }	
  .content {
+  width:95%;
   max-width: 1000px;
   margin-top:60px;
   margin-left: auto;
