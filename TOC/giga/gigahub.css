@@ -87,33 +87,69 @@ body {
   margin-left: auto;
   margin-right: auto;
   }
-img { 
-text-align: center;
-  width: 100%;
-  max-width: 1080px;
-}
  h1 {
   font-size: 1.5em;
   border-bottom: 3px solid yellow;
 }
 h2 {
- font-size: 1.2em;
+ font-size: 1em;
 }
-h2 a {
+div.gallery  a {
      text-decoration: none;
 }
-h2 a {
+div.gallery  a {
 	color: #fff;
 }
-h2 a:link {
+div.gallery  a:link {
 	color: #fff;
 }
-h2 a:visited {
+div.gallery  a:visited {
 	color: #fff;
 }
-h2 a:hover {
+div.gallery  a:hover {
 	color: #ffe404;
 }
-h2 a:active {
+div.gallery  a:active {
 	color: #fff;
+}
+h3 {
+	font-size:0.85em;
+}
+div.gallery {
+  border: 1px solid #ddd;
+}
+div.gallery:hover {
+  border: 1px solid #ffe404;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 49.99999%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
