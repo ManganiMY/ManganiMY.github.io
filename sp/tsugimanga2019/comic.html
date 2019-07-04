@@ -30,13 +30,20 @@
   margin-right: auto;
   width: 50%;
   }
+.content{
+	width: 100%;
+	max-width:1080px;
+	margin-left:auto;
+	margin-right: auto;
+}		
 .footer{
- display:inline-block;
- width: 100%;
-  margin: auto;
+	display:inline-block;
+	width: 100%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
-p
-{
+p{
 margin: 0;
 padding: 0;
 }
@@ -86,8 +93,8 @@ div.gallery a:active {
 	color: black;
 }
 div.gallery {
-	margin: 5px 0;
-  border: 1px solid #777;
+	margin: 1% 0;
+  border: 2px solid black;
 }
 div.gallery div.box{
 	text-align: center;
@@ -101,16 +108,15 @@ max-width:100%;
 max-height:170px;"
 }
 div.title {
+	font-weight: bold;
 	overflow:auto;
-    height:100px;
-  padding: .5em 10px;
- 
+	height:100px;
+	padding: .5em 10px;
 }
 div.author {
-	overflow:hidden;
+    overflow:auto;
     height:4em;
     line-height:1;
-    text-overflow: ellipsis;
   padding: .5em 10px;
  
 }
@@ -122,7 +128,7 @@ div.author {
   float: left;
   width: 19.99999%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;;
   }
