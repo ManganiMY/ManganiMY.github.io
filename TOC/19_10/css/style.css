@@ -84,9 +84,14 @@ body {
   margin: 0;
 }
 
-::after(#nav-center),.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: yellow;
   color: black;
+}
+
+.navbar #nav-center a:hover, .dropbtn {
+  background-color: ;
+  color: ;
 }
 .dropdown-content {
   display: none;
