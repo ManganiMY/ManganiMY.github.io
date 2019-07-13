@@ -296,6 +296,16 @@
   ga('send', 'pageview');
 
 </script>
-
+<script>
+window.onscroll = function() {scrollFunction()};
+var postion = document.getElementById("grid-container");
+function scrollFunction() {
+  if (document.body.scrollTop > postion.offsetTop + postion.offsetTop/2 ) {
+    document.getElementById("nav-center").style.top = "50%";
+  } else {
+    document.getElementById("nav-center").style.top = "-50px";
+  }
+}
+</script>
 </body>
 </html>
