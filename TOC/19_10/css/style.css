@@ -41,8 +41,11 @@ body {
   padding-bottom:5px;
   text-align: center;
    transform: translate(-50%, -50%);
+     transition: top 0.3s;
   }
-  
+#nav-center a{
+  padding: 0 5px;
+  }
 #nav-center .dropbtn {
   font-size: 16px;  
   border: none;
@@ -51,10 +54,9 @@ body {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  transition: top 0.3s;
+
 }  
 #nav-center img{
-	padding: 0 5px;
     width: 10px;
     height: 20px;
 }
@@ -81,7 +83,8 @@ body {
   font-family: inherit;
   margin: 0;
 }
-.navbar a:hover, .dropdown:hover .dropbtn {
+
+::after(#nav-center),.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: yellow;
   color: black;
 }
