@@ -88,10 +88,9 @@ body {
   background-color: yellow;
   color: black;
 }
-
-.navbar #nav-center a:hover, .dropbtn {
-  background-color: ;
-  color: ;
+#nav-center a:hover,.dropbtn {
+  background-color: transparent;
+  color: black;
 }
 .dropdown-content {
   display: none;
