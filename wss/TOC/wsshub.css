@@ -127,7 +127,7 @@ div.desc {
   box-sizing: border-box;
 }
 .responsive {
-  padding: 0 6px;
+  padding: 2px 5px;
   float: left;
   width: 24.99999%;
 }
