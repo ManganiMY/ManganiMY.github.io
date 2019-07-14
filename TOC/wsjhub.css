@@ -51,9 +51,13 @@ body {
   font-family: inherit;
   margin: 0;
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: yellow;
   color: black;
+}
+. dropdown .dropbtn a:hover{
+	color: black;
 }
 .dropdown-content {
   display: none;
