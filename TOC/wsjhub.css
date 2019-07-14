@@ -56,8 +56,8 @@ body {
   background-color: yellow;
   color: black;
 }
-. dropdown .dropbtn a:hover{
-	color: black;
+.navbar a:hover, .dropdown:hover a{
+  color: black;
 }
 .dropdown-content {
   display: none;
