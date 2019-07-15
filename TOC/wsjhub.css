@@ -56,9 +56,6 @@ body {
   background-color: yellow;
   color: black;
 }
-.navbar a:hover, .dropdown:hover a{
-  color: black;
-}
 .dropdown-content {
   display: none;
   position: fixed;
@@ -78,7 +75,7 @@ body {
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-.dropdown:hover .dropdown-content {
+.show {
   display: block;
 }
  .header {
