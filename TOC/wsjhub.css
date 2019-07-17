@@ -53,7 +53,7 @@ body {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: yellow;
   color: black;
 }
