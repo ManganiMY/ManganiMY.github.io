@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,41 +29,40 @@
 <body>
 <div class="navbar">
 <div class="fit">
-  
   <div class="dropdown">
-    <button class="dropbtn">Menu 
+	   <button class="dropbtn" onclick="myFunction(this)">Menu
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div class="dropdown-content" id="myDropdown1">
       <a href="/">Home</a>
-      <a href="/TOC">Weekly Shonen Jump Hub</a>
+      <a href="#">Weekly Shonen Jump Hub</a>
       <a href="/wss/TOC">Weekly Shonen Sunday Hub</a>
       <a href="/wsm/TOC">Weekly Shonen Magazine Hub</a>
       <a href="/wsc/TOC">Weekly Shonen Champion Hub</a>
     </div>
   </div> 
  <div class="dropdown">
-    <button class="dropbtn">SP 
+	 <button class="dropbtn" onclick="myFunction(this)">SP
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
-      <a href="/TOC/giga">GIGA</a>
+    <div class="dropdown-content" id="myDropdown2">
+      <a href="giga">GIGA</a>
     </div>
-  </div>
+  </div> 	
   <div id="nav-center">
 	  <a><img src="https://manganimy.github.io/TOC/img/prev2.png"></a>
 	  <a><button class="dropbtn">Summer #1</button></a>
  	  <a><img src="https://manganimy.github.io/TOC/img/next2.png"></a>
   </div>
-  <div class="lang">
+   <div class="lang">
   <div class="dropdown">
-    <button class="dropbtn">eng 
+	  <button class="dropbtn" onclick="myFunction(this)">eng 
       <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
+	    </button>
+    <div class="dropdown-content"id="myDropdown3" >
       <a href="esp">esp</a>
-    </div>	  
-     </div>
+    </div>
+    </div>
   </div> 
 </div>
 </div>	<!-- end navbar -->
@@ -120,10 +120,34 @@
 
 </script>
 <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction(a) {
+  a.parentNode.getElementsByClassName("dropdown-content")[0].classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown1 = document.getElementById("myDropdown1");
+  var myDropdown2 = document.getElementById("myDropdown2");
+  var myDropdown3 = document.getElementById("myDropdown3");
+    if (myDropdown1.classList.contains('show')) {
+      myDropdown1.classList.remove('show');
+    }
+    if (myDropdown2.classList.contains('show')) {
+      myDropdown2.classList.remove('show');
+    }
+    if (myDropdown3.classList.contains('show')) {
+      myDropdown3.classList.remove('show');
+    }
+  }
+}
+</script>
+<script>
 window.onscroll = function() {scrollFunction()};
 var postion = document.getElementById("grid-container");
 function scrollFunction() {
-  if (document.body.scrollTop > postion.offsetTop + postion.offsetTop/2 ) {
+  if (document.body.scrollTop > postion.offsetTop + postion.offsetTop/2 ||document.documentElement.scrollTop > postion.offsetTop + postion.offsetTop/2) {
     document.getElementById("nav-center").style.top = "50%";
   } else {
     document.getElementById("nav-center").style.top = "-50px";
