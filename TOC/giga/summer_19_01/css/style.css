@@ -19,9 +19,11 @@ body {
   overflow: hidden;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
+  -webkit- position: fixed;
   top: 0; /* Position the navbar at the top of the page */
   height: 50px;
   width: 100%; /* Full width */
+  z-index:2;
 }
 .navbar a {
   float: left;
@@ -84,7 +86,7 @@ body {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:active {
   background-color: yellow;
   color: black;
 }
@@ -111,7 +113,7 @@ body {
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-.dropdown:hover .dropdown-content {
+.show {
   display: block;
 }
 /**************************/
@@ -182,9 +184,11 @@ body {
 	line-height: 1.4em;
 	text-align: left;
 }
-#container h2 a .arrow {
-	width: .6em;
-	display: inline-block;
+#container h2 a img{
+	width: 1rem;
+    display: inline-block;
+    padding: 5px;
+
 }
 #container h2 a {
 	color: #fff;
@@ -320,6 +324,9 @@ body {
 	#container h2 {
 		border-bottom: 4px dotted #fff;
 	}
+    #container h2 a img{
+		width: 1.8rem;
+    }
 	#container .detail_area .r_side {
 		font-size: 1.6em;
 	}
