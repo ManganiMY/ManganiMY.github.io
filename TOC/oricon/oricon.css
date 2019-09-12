@@ -2,7 +2,7 @@ body {
  margin:0;
   background: white;
   color: black;
-  font-family: Futura,Trebuchet MS,sans-serif,Arial;
+  font-family: メイリオ, Meiryo, Verdana, Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
  }
   .center {
   display: block;
