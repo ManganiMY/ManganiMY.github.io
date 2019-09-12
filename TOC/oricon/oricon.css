@@ -13,7 +13,7 @@ body {
 .data {
   min-width: 1080px ; 
   margin: 0 auto ; 
-  font-family: "Lucida Console", Monaco, monospace  ;
+  font-family: "Courier New", Courier, monospace  ;
 }	  
 .navbar {
   overflow: hidden;
