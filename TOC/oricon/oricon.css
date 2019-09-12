@@ -1,14 +1,14 @@
 body {
  margin:0;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   font-family: Futura,Trebuchet MS,sans-serif,Arial;
  }
   .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 90%;
   }
 	
 .navbar {
