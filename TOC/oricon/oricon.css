@@ -10,7 +10,11 @@ body {
   margin-right: auto;
   width: 90%;
   }
-	
+.data {
+  min-width: 1080px; 
+  margin: 0 auto; 
+  font-family: "Lucida Console", Monaco, monospace
+}	  
 .navbar {
   overflow: hidden;
   background-color: #333;
