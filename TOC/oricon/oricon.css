@@ -4,17 +4,41 @@ body {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
  }
+ span{
+ font-size: .8em
+ }
   .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
   }
+  
 .data {
-  min-width: 1080px ; 
+  float: left;
+  padding: 10px;
+  width: 74%;
+  min-width: 830px ; 
   margin: 0 auto ; 
   font-family: "Courier New", Courier, monospace  ;
-}	  
+}	
+.bookmark {
+  float: left;
+  padding: 10px;
+  min-width: 230px ; 
+  margin: 0 auto ; 
+}
+.footer{
+width: 100%;
+float:left; 
+text-align:center; 
+line-height:1; 
+font-size:.85em;
+font-weight: bold;
+}
+.footer a{
+	text-decoration: none;
+  }
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -35,7 +59,7 @@ body {
 
 .navbar .lang {
   float: right;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 .navbar .fit{
   max-width: 1080px;
@@ -66,7 +90,7 @@ body {
   display: none;
   position: fixed;
   background-color: #f9f9f9;
-  min-width: 50px;
+
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -78,6 +102,26 @@ body {
   display: block;
   text-align: left;
 }
+ .lang .dropdown-content{
+   min-width: 230px;
+} 
+
+ .lang .dropdown-content a {
+ font-size: 11px;
+  background-color: #fff;
+} 
+ .lang .dropdown-content p {
+  float: none;
+  background-color: #f9f9f9;
+  color: black;
+  font-weight: bold;
+  margin: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+ font-size: 12px;
+} 
+
 .dropdown-content a:hover {
   background-color: #ddd;
   
@@ -106,24 +150,23 @@ text-align: center;
   font-size: 1.5em;
   border-bottom: 1.5px solid black;
 }
-h2 {
- font-size: 1.2em;
+
+.bookmark a {
+	display: block	;
+    text-decoration: none;
 }
-h2 a {
-     text-decoration: none;
+.bookmark p {
+	margin: 5px 0;
 }
-h2 a {
-	color: #fff;
+.bookmark  a:link {
+	color: blue;
 }
-h2 a:link {
-	color: #fff;
+.bookmark  a:visited {
+	color: purple;
 }
-h2 a:visited {
-	color: #fff;
+.bookmark  a:hover {
+	color: red;
 }
-h2 a:hover {
-	color: #ffe404;
-}
-h2 a:active {
-	color: #fff;
+.bookmark  a:active {
+	color: red;
 }
