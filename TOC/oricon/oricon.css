@@ -17,6 +17,7 @@ body {
 .data {
   float: left;
   padding: 10px;
+  overflow-x: scroll;
   width: 74%;
   min-width: 830px ; 
   margin: 0 auto ; 
