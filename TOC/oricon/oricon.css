@@ -104,7 +104,10 @@ font-weight: bold;
   text-align: left;
 }
  .lang .dropdown-content{
-   min-width: 230px;
+  max-height: 50%; 
+  min-width: 230px; 
+  overflow-x: hidden;
+  overflow-y: scroll;
 } 
 
  .lang .dropdown-content a {
