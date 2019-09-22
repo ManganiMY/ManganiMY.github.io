@@ -24,9 +24,11 @@ body {
   font-family: "Courier New", Courier, monospace  ;
 }	
 .bookmark {
+  white-space: nowrap;
+  overflow-x: scroll;
   float: left;
   padding: 10px;
-  min-width: 230px ; 
+  max-width: 22%;
   margin: 0 auto ; 
 }
 .footer{
