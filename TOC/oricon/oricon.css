@@ -16,32 +16,18 @@ body {
   }
   
 .data {
-  white-space: nowrap;
   float: left;
-  padding-top:10px;
-  padding-left:10px;
-  padding-right: 5px;
+  padding: 10px;
+  width: 74%;
+  min-width: 830px ; 
   margin: 0 auto ; 
   font-family: "Courier New", Courier, monospace  ;
 }	
 .bookmark {
   float: left;
-  padding-top: 9px;
-  padding-left: 5px;
+  padding: 10px;
+  min-width: 230px ; 
   margin: 0 auto ; 
-}
-.bookmark .quick{
- white-space: nowrap;
- overflow-x: scroll;
-}
-@media only screen and (min-width: 200px) {
-.data{width:100%;}
-.bookmark{width:100%;}
-}
-@media only screen and (min-width: 1200px) {
-.data{min-width:830px;
-max-width:73%;}
-.bookmark{width:22%;}
 }
 .footer{
 width: 100%;
@@ -130,6 +116,7 @@ font-weight: bold;
 } 
  .lang .dropdown-content p {
   float: none;
+  background-color: #f9f9f9;
   color: black;
   font-weight: bold;
   margin: 12px 16px;
