@@ -120,6 +120,7 @@ div.gallery img {
   height: auto;
 }
 div.desc {
+  min-height:5em;
   padding: 10px;
   text-align: center;
 }
