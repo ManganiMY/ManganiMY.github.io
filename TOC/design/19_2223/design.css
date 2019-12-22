@@ -88,6 +88,11 @@ body {
  h2 {
  font-size: .8em;
 }
+
+.hr1 {
+	border: 1.2px solid red;
+	margin-bottom: 2em;
+}
 div.gallery  a {
      text-decoration: none;
 }
