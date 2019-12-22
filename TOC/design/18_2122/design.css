@@ -110,17 +110,18 @@ h3 {
 	font-size:0.85em;
 }
 div.gallery {
-  border: 2px solid #ccc;
+  border: 2px solid #777;
 }
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid black;
 }
 div.gallery img {
   width: 100%;
   height: auto;
 }
 div.desc {
-  padding: 10px;
+  min-height:5.5em;
+  padding: 8px;
   text-align: center;
 }
 * {
