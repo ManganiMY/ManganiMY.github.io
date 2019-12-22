@@ -50,7 +50,7 @@ body {
   margin: 0;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: yellow;
   color: black;
 }
 .dropdown-content {
@@ -86,7 +86,7 @@ body {
   border-bottom: 3px solid red;
 }
  h2 {
- font-size: 1em;
+ font-size: .8em;
 }
 div.gallery  a {
      text-decoration: none;
@@ -120,8 +120,8 @@ div.gallery img {
   height: auto;
 }
 div.desc {
-  min-height:5.5em;
-  padding: 8px;
+  min-height:6em;
+  padding: 10px 8px;
   text-align: center;
 }
 * {
@@ -143,6 +143,17 @@ div.desc {
     width: 49.99999%;
   }
 }
+.footer{
+width: 100%;
+float:left; 
+text-align:center; 
+line-height:1; 
+font-size:.85em;
+font-weight: bold;
+}
+.footer a{
+	text-decoration: none;
+  }
 .clearfix:after {
   content: "";
   display: table;
