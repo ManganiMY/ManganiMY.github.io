@@ -126,9 +126,7 @@ width:100%
   align-items: center;
   padding: 5px;
   text-align: center;
-  white-space: nowrap;
-  overflow:hidden;
-  text-overflow:auto;
+  overflow-y:auto;
 }
 * {
   box-sizing: border-box;

@@ -50,7 +50,7 @@ body {
   margin: 0;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: yellow;
   color: black;
 }
 .dropdown-content {
@@ -86,7 +86,7 @@ body {
   border-bottom: 3px solid red;
 }
  h2 {
- font-size: 1em;
+ font-size: .8em;
 }
 div.gallery  a {
      text-decoration: none;
@@ -110,25 +110,30 @@ h3 {
 	font-size:0.85em;
 }
 div.gallery {
-  border: 2px solid #ccc;
+  border: 2px solid #777;
 }
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 2px solid black;
 }
 div.gallery img {
   width: 100%;
   height: auto;
 }
 div.desc {
-  padding: 10px;
+height:5em;	
+width:100%
+  display: flex;
+  align-items: center;
+  padding: 5px;
   text-align: center;
+  overflow-y:auto;
 }
 * {
   box-sizing: border-box;
 }
 .responsive {
-  padding: 0 5px;
-	margin-bottom: 5px;
+  padding: 0px 5px;
+  margin-bottom:5px;
   float: left;
   width: 24.99999%;
 }
@@ -142,6 +147,17 @@ div.desc {
     width: 49.99999%;
   }
 }
+.footer{
+width: 100%;
+float:left; 
+text-align:center; 
+line-height:1; 
+font-size:.85em;
+font-weight: bold;
+}
+.footer a{
+	text-decoration: none;
+  }
 .clearfix:after {
   content: "";
   display: table;
