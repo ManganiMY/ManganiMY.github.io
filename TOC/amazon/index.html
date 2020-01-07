@@ -7,37 +7,26 @@
                 border-collapse: collapse;
                 border: 2px black solid;
                 font: 12px;
-                font-family: "Courier New", Courier, monospace  ;        
+                font-family: "Courier New", Courier, monospace  ;              
                 
-            }
-
+				}
             td {
                 border: 1px black solid;
                 padding: 5px;
             }
- #content {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  }
+              
         </style>
-</head
+</head>
 <body>
-<div id="content">
 <script src="https://d3js.org/d3.v3.min.js"></script>
   <script>
-
   d3.tsv("amazon.tsv", function(error, data){
-
-    var table = d3.select("content").append("table"),
+    var table = d3.select("body").append("table"),
         tbody = table.append("tbody");
-
     var rows = tbody.selectAll("tr")
       .data(data)
     .enter()
       .append("tr");
-
     var cells = rows.selectAll("td")
       .data(function(row) {
           return d3.range(Object.keys(row).length).map(function(column, i) {
@@ -47,11 +36,9 @@
     .enter()
       .append("td")
       .text(function(d) { return d; });
-
   });
-
   </script> 
-    </content>       
+        
 </body>
 
 </html>
