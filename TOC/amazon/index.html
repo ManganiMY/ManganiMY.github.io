@@ -1,47 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> 
-<meta charset="utf-8">
-    <style>
-            table {
-                border-collapse: collapse;
-                border: 2px black solid;
-                font: 12px;
-                font-family: "Courier New", Courier, monospace  ;              
-                display: float;
- 		 margin-left: auto;
-		  margin-right: auto;
-		  max-width: 90%;			
-				}
-            td {
-                border: 1px black solid;
-                padding: 5px;
-            }
-              
-        </style>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>Shonen Jump Amazon Ranking</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
+
 <body>
-<script src="https://d3js.org/d3.v3.min.js"></script>
-  <script>
-  d3.tsv("amazon.tsv", function(error, data){
-    var table = d3.select("body").append("table"),
-        tbody = table.append("tbody");
-    var rows = tbody.selectAll("tr")
-      .data(data)
-    .enter()
-      .append("tr");
-    var cells = rows.selectAll("td")
-      .data(function(row) {
-          return d3.range(Object.keys(row).length).map(function(column, i) {
-              return row[Object.keys(row)[i]];
-          });
-      })
-    .enter()
-      .append("td")
-      .text(function(d) { return d; });
-  });
-  </script> 
+
+	<div id="page-wrap">
+
+	<h1>Shonen Jump Amazon Ranking</h1>
+    <br>
+	<p class="timestamp"></p>
+
+	</div>
+
+	 <script>
+    $.getJSON('https://manganimy.github.io/TOC/amazon/timestamp.json', function(data) {
         
+        var text = `TIME: ${data.time}(JST)`
+                    
+        $(".timestamp").html(text);
+    });
+    </script>
+	<script type="text/javascript">
+	  d3.tsv("https://manganimy.github.io/TOC/amazon/amazon.tsv", function(error, data) {
+		  if (error) throw error;
+		  
+		  var table = d3.select('#page-wrap').append('table');
+		  var titles = d3.keys(data[0]);
+		  var headers = table.append('thead').append('tr')
+		                   .selectAll('th')
+		                   .data(titles).enter()
+		                   .append('th')
+		                   .text(function (d) {
+			                    return d;
+		                    })
+		  var rows = table.append('tbody').selectAll('tr')
+		               .data(data).enter()
+		               .append('tr');
+		  rows.selectAll('td')
+		    .data(function (d) {
+		    	return titles.map(function (k) {
+		    		return { 'value': d[k], 'name': k};
+		    	});
+		    }).enter()
+		    .append('td')
+		    .attr('data-th', function (d) {
+		    	return d.name;
+		    })
+		    .text(function (d) {
+		    	return d.value;
+		    });
+	  });
+	</script>
 </body>
 
 </html>
