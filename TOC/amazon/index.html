@@ -3,23 +3,31 @@
 
 <head>
 	<meta charset='UTF-8'>
-	<title>Weekly Shonen Jump Volumes Amazon Ranking</title>
+	
+	<title>Shonen Jump Amazon Ranking</title>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--[if !IE]><!-->
 <link rel="stylesheet" type="text/css" href="style.css">
-
+	<!--<![endif]-->
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
+
 <body>
+
 	<div id="page-wrap">
 
-	<h1>Weekly Shonen Jump Volumes Amazon Ranking</h1>
+	<h1>Shonen Jump Amazon Ranking</h1>
     <br>
 	<p class="timestamp"></p>
 
 	</div>
+
 	 <script>
-    $.getJSON('timestamp.json', function(data) {
+	 var dropbox_json = "https://dl.dropboxusercontent.com/s/h0wriawz3khwi9p/timestamp.json?dl=1"
+    $.getJSON(dropbox_json, function(data) {
         
         var text = `TIME: ${data.time}(JST)`
                     
@@ -27,7 +35,8 @@
     });
     </script>
 	<script type="text/javascript">
-	  d3.tsv("amazon.tsv", function(error, data) {
+	var dropbox_tsv = "https://dl.dropboxusercontent.com/s/h6p9n9ks59pa7fs/amazon.tsv?dl=1"
+	  d3.tsv(dropbox_tsv, function(error, data) {
 		  if (error) throw error;
 		  
 		  var table = d3.select('#page-wrap').append('table');
@@ -58,4 +67,5 @@
 	  });
 	</script>
 </body>
+
 </html>
