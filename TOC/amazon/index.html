@@ -19,7 +19,7 @@
 
 	</div>
 	 <script>
-    $.getJSON('https://manganimy.github.io/TOC/amazon/timestamp.json', function(data) {
+    $.getJSON('timestamp.json', function(data) {
         
         var text = `TIME: ${data.time}(JST)`
                     
@@ -27,7 +27,7 @@
     });
     </script>
 	<script type="text/javascript">
-	  d3.tsv("https://manganimy.github.io/TOC/amazon/amazon.tsv", function(error, data) {
+	  d3.tsv("amazon.tsv", function(error, data) {
 		  if (error) throw error;
 		  
 		  var table = d3.select('#page-wrap').append('table');
