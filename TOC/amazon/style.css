@@ -41,4 +41,7 @@
 	}
 	table td:nth-child(2){
 		text-align: right;
-	}	
+	}
+	table td:nth-child(3){
+		text-align: center;
+	}		
