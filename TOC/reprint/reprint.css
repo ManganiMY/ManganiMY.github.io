@@ -7,6 +7,12 @@ body {
   height: 100%;
   position: relative;
 }
+#year-nav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;	
+}	
 h2 {
 	font-size: 1.5em;
 	text-align:center;
