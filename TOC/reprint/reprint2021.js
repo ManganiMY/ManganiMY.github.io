@@ -125,7 +125,9 @@ d3.json(dropbox_json, function(data) { // loading data from server
 		          arr.push(d[k]);
                 }
               }
-              return [arr[0],arr[1],arr[2]];
+	parseDate = d3.time.format("%Y-%m-%d").parse
+	formatDate = d3.time.format("%d-%b")
+        return [formatDate(parseDate(arr[0])),arr[1],arr[2]];
             })
           .enter()
             .append("td") 
